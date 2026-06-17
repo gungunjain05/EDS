@@ -1,9 +1,9 @@
 export default function decorate(block) {
   block.innerHTML = `
-    <form>
-      <input placeholder="Name" />
-      <input placeholder="Email" />
+    <div class="contact-form-container">
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
       <button>Submit</button>
-    </form>
+    </div>
   `;
 }
