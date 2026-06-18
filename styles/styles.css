@@ -323,3 +323,8 @@ main .section.highlight {
   margin: 0;
   padding: 40px 0;
 }
+.hero {
+  background: #000;
+  color: white;
+  padding: 80px;
+}
