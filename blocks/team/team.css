@@ -1,0 +1,16 @@
+.team {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.team-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 200px;
+  border-radius: 8px;
+}
+
+.team-card h3 {
+  margin-top: 0;
+}
