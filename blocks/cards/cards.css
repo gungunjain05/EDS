@@ -1,27 +1,57 @@
+.cards-container {
+  padding: 80px 24px;
+  background: #f8fafc;
+}
+
 .cards > ul {
   list-style: none;
-  margin: 0;
   padding: 0;
+  margin: 40px 0;
+
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
 }
 
 .cards > ul > li {
-  border: 1px solid #dadada;
-  background-color: var(--background-color);
+  background: #fff;
+  border-radius: 20px;
+  padding: 32px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 10px 30px rgba(0,0,0,.08);
+  transition: all .3s ease;
+}
+
+.cards > ul > li:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(37,99,235,.15);
 }
 
 .cards .cards-card-body {
-  margin: 16px;
+  margin: 0;
 }
 
-.cards .cards-card-image {
-  line-height: 0;
+.cards .cards-card-body h3 {
+  color: #0f172a;
+  font-size: 24px;
+  margin-bottom: 16px;
+  font-weight: 700;
 }
 
-.cards > ul > li img {
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  object-fit: cover;
+.cards .cards-card-body p {
+  color: #64748b;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+@media (max-width: 992px) {
+  .cards > ul {
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .cards > ul {
+    grid-template-columns: 1fr;
+  }
 }
