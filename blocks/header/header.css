@@ -1,3 +1,52 @@
+header .nav-wrapper {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0,0,0,.15);
+}
+
+header nav {
+  max-width: 1280px;
+  margin: auto;
+  min-height: 80px;
+}
+
+header .nav-brand {
+  color: white;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+header .nav-brand p:first-child {
+  font-size: 26px;
+  margin-bottom: 4px;
+}
+
+header .nav-brand p:last-child {
+  font-size: 13px;
+  color: #cbd5e1;
+}
+
+header .nav-sections ul {
+  gap: 32px;
+}
+
+header .nav-sections a {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .3s;
+}
+
+header .nav-sections a:hover {
+  color: #38bdf8;
+}
+
+header .nav-tools {
+  color: white;
+}
+
 /* header and nav layout */
 header .nav-wrapper {
   background-color: var(--background-color);
