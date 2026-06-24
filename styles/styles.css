@@ -6,15 +6,11 @@
   --radius: 16px;
 }
 
-/* body {
+body {
   margin: 0;
   font-family: Inter, Arial, sans-serif;
   background: var(--bg);
   color: var(--text);
-} */
-
-body {
-  background: red !important;
 }
 
 main {
