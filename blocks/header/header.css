@@ -1,4 +1,4 @@
-header .nav-wrapper {
+/* header .nav-wrapper {
   background: #FFFFFF;
   box-shadow: 0 2px 16px rgba(0,0,0,0.06);
   position: sticky;
@@ -10,7 +10,7 @@ header nav {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 32px;
-  min-height: 70px;     /* yahi extra space ka fix hai */
+  min-height: 70px;    
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -48,4 +48,29 @@ header .nav-sections a:hover {
 
 header .nav-tools {
   color: var(--color-text-dark);
+} */
+
+header .nav-wrapper {
+  background: #fff;
+  box-shadow: 0 2px 12px rgb(0 0 0 / 5%);
+}
+
+header nav {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+  min-height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .nav-sections a {
+  color: var(--color-text-dark);
+  font-weight: 600;
+  font-size: 15px;
+}
+
+header .nav-sections a:hover {
+  color: var(--color-cta);
 }
