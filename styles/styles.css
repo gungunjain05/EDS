@@ -1,15 +1,3 @@
-/*
- * Copyright 2020 Adobe. All rights reserved.
- * This file is licensed to you under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License. You may obtain a copy
- * of the License at http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software distributed under
- * the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR REPRESENTATIONS
- * OF ANY KIND, either express or implied. See the License for the specific language
- * governing permissions and limitations under the License.
- */
-
 :root {
     /* colors */
     --background-color: white;
@@ -18,11 +6,19 @@
     --text-color: #131313;
     --link-color: #3b63fb;
     --link-hover-color: #1d3ecf;
-
+    --color-bg-primary: #faf6f2;
+    --color-accent-pink: #f4c7c3;
+    --color-accent-blue: #b8d8e8;
+    --color-accent-lavender: #d8cff0;
+    --color-accent-mint: #c3e8d1;
+    --color-text-dark: #3a3a4a;
+    --color-text-muted: #6b6b7d;
+    --color-cta: #e89b9b;
+    --color-cta-hover: #d67e7e;
     /* fonts */
-    --body-font-family: roboto, roboto-fallback, sans-serif;
+    --body-font-family: "Poppins", "Inter", Arial, sans-serif;
     --heading-font-family:
-        roboto-condensed, roboto-condensed-fallback, sans-serif;
+        "Roboto Condensed", "Roboto Condensed Fallback", sans-serif;
 
     /* body sizes */
     --body-font-size-m: 22px;
@@ -39,19 +35,6 @@
 
     /* nav height */
     --nav-height: 64px;
-}
-
-/* fallback fonts */
-@font-face {
-    font-family: roboto-condensed-fallback;
-    size-adjust: 88.82%;
-    src: local("Arial");
-}
-
-@font-face {
-    font-family: roboto-fallback;
-    size-adjust: 99.529%;
-    src: local("Arial");
 }
 
 @media (width >= 900px) {
@@ -74,11 +57,13 @@
 body {
     display: none;
     margin: 0;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    /* background-color: var(--background-color);
+    color: var(--text-color); */
     font-family: var(--body-font-family);
     font-size: var(--body-font-size-m);
     line-height: 1.6;
+    background: linear-gradient(160deg, #fdf4ec 0%, #e8eef7 100%);
+    color: var(--color-text-dark);
 }
 
 body.appear {
@@ -338,22 +323,9 @@ main .section.highlight {
 }
 
 /* :root {
-  --color-bg-primary: #FAF6F2;
-  --color-accent-pink: #F4C7C3;
-  --color-accent-blue: #B8D8E8;
-  --color-accent-lavender: #D8CFF0;
-  --color-accent-mint: #C3E8D1;
-  --color-text-dark: #3A3A4A;
-  --color-text-muted: #6B6B7D;
-  --color-cta: #E89B9B;
-  --color-cta-hover: #D67E7E;
+
 }
 
-body {
-  background: linear-gradient(160deg, #FDF4EC 0%, #E8EEF7 100%);
-  color: var(--color-text-dark);
-  font-family: 'Poppins', 'Inter', Arial, sans-serif;
-}
 
 main > div {
   max-width: 1200px;
