@@ -1,4 +1,4 @@
-header .nav-wrapper {
+/* header .nav-wrapper {
     background: var(--color-bg-primary);
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
     position: sticky;
@@ -48,4 +48,132 @@ header .nav-sections a:hover {
 
 header .nav-tools {
     color: var(--color-text-dark);
+} */
+
+
+header .nav-wrapper {
+  background: var(--color-bg-primary);
+  box-shadow: 0 2px 16px rgb(0 0 0 / 6%);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header nav {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 32px;
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ---------- LOGO / BRAND ---------- */
+header .nav-brand {
+  display: flex;
+  align-items: center;
+}
+
+header .nav-brand a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-text-dark);
+  font-size: 24px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+
+/* if logo is an image inside brand link */
+header .nav-brand img {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
+/* ---------- NAV LINKS ---------- */
+header .nav-sections {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+header .nav-sections ul {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header .nav-sections > ul > li {
+  list-style: none;
+}
+
+header .nav-sections a {
+  position: relative;
+  display: inline-block;
+  color: var(--color-text-dark);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+header .nav-sections a:hover {
+  background: rgb(0 0 0 / 5%);
+  color: var(--color-cta);
+}
+
+/* active/current page pill */
+header .nav-sections a[aria-current="page"] {
+  background: var(--color-cta);
+  color: #fff;
+}
+
+/* ---------- TOOLS / CTA (right of nav, optional) ---------- */
+header .nav-tools {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-left: 24px;
+}
+
+/* ---------- HAMBURGER (mobile) ---------- */
+header .nav-hamburger {
+  display: none;
+}
+
+@media (width <= 899px) {
+  header .nav-sections {
+    display: none;
+  }
+
+  header .nav-hamburger {
+    display: block;
+    margin-left: auto;
+  }
+
+  header[aria-expanded="true"] .nav-sections {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: var(--nav-height, 76px);
+    left: 0;
+    right: 0;
+    background: var(--color-bg-primary);
+    padding: 16px 24px;
+    box-shadow: 0 8px 16px rgb(0 0 0 / 8%);
+  }
+
+  header[aria-expanded="true"] .nav-sections ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
 }
