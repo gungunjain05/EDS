@@ -1,92 +1,40 @@
 :root {
-  --brand-primary: #0f172a;
-  --brand-secondary: #2563eb;
-  --brand-accent: #06b6d4;
+  --color-bg-primary: #FAF6F2;
+  --color-bg-gradient-start: #FDF4EC;
+  --color-bg-gradient-end: #E8EEF7;
+  --color-accent-pink: #F4C7C3;
+  --color-accent-blue: #B8D8E8;
+  --color-accent-lavender: #D8CFF0;
+  --color-accent-mint: #C3E8D1;
+  --color-text-dark: #3A3A4A;
+  --color-text-muted: #6B6B7D;
+  --color-cta: #E89B9B;
+  --color-cta-hover: #D67E7E;
 }
 
-main {
-  background: #f8fafc;
+body {
+  background: linear-gradient(160deg, var(--color-bg-gradient-start) 0%, var(--color-bg-gradient-end) 100%);
+  color: var(--color-text-dark);
+  font-family: 'Poppins', 'Inter', Arial, sans-serif;
 }
 
-/* Hero */
-
-.hero-container {
-  background:
-    linear-gradient(rgba(15,23,42,.8), rgba(15,23,42,.8)),
-    url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3')
-    center/cover;
-  color: white;
-  text-align: center;
-  padding: 140px 24px;
+h1, h2, h3 {
+  color: var(--color-text-dark);
+  font-weight: 700;
 }
 
-.hero-container h1 {
-  font-size: 64px;
-  max-width: 900px;
-  margin: auto;
+a.button {
+  background: var(--color-cta);
+  color: #fff;
+  border-radius: 30px;
+  padding: 14px 32px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+  display: inline-block;
 }
 
-.hero-container p {
-  max-width: 700px;
-  margin: 24px auto;
-  font-size: 20px;
-}
-
-/* Sections */
-
-main .section {
-  padding: 80px 24px;
-}
-
-main h2 {
-  text-align: center;
-  font-size: 42px;
-  margin-bottom: 40px;
-}
-
-/* Cards */
-
-.cards > ul {
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 30px;
-  list-style: none;
-  padding: 0;
-}
-
-.cards > ul > li {
-  background: white;
-  padding: 30px;
-  border-radius: 18px;
-  box-shadow: 0 8px 25px rgba(0,0,0,.08);
-}
-
-.cards > ul > li:hover {
-  transform: translateY(-6px);
-}
-
-/* CTA */
-
-.section:last-child {
-  text-align: center;
-  background: linear-gradient(135deg,#0f172a,#2563eb);
-  color: white;
-}
-
-/* Responsive */
-
-@media(max-width:900px){
-  .cards > ul{
-    grid-template-columns:repeat(2,1fr);
-  }
-}
-
-@media(max-width:768px){
-  .cards > ul{
-    grid-template-columns:1fr;
-  }
-
-  .hero-container h1{
-    font-size:40px;
-  }
+a.button:hover {
+  background: var(--color-cta-hover);
+  transform: translateY(-2px);
 }
