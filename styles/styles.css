@@ -1,64 +1,64 @@
 :root {
-  --color-bg-primary: #FAF6F2;
-  --color-accent-pink: #F4C7C3;
-  --color-accent-blue: #B8D8E8;
-  --color-accent-lavender: #D8CFF0;
-  --color-accent-mint: #C3E8D1;
-  --color-text-dark: #3A3A4A;
-  --color-text-muted: #6B6B7D;
-  --color-cta: #E89B9B;
-  --color-cta-hover: #D67E7E;
+    --color-bg-primary: #faf6f2;
+    --color-accent-pink: #f4c7c3;
+    --color-accent-blue: #b8d8e8;
+    --color-accent-lavender: #d8cff0;
+    --color-accent-mint: #c3e8d1;
+    --color-text-dark: #3a3a4a;
+    --color-text-muted: #6b6b7d;
+    --color-cta: #e89b9b;
+    --color-cta-hover: #d67e7e;
 }
 
 body {
-  background: linear-gradient(160deg, #FDF4EC 0%, #E8EEF7 100%);
-  color: var(--color-text-dark);
-  font-family: 'Poppins', 'Inter', Arial, sans-serif;
+    background: linear-gradient(160deg, #fdf4ec 0%, #e8eef7 100%);
+    color: var(--color-text-dark);
+    font-family: "Poppins", "Inter", Arial, sans-serif;
 }
 
 main > div {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
 
 h2 {
-  font-size: 34px;
-  text-align: center;
-  margin: 50px 0 28px;
+    font-size: 34px;
+    text-align: center;
+    margin: 50px 0 28px;
 }
 
 a.button {
-  background: var(--color-cta);
-  color: #fff;
-  border-radius: 30px;
-  padding: 14px 32px;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  transition: 0.3s;
+    background: var(--color-cta);
+    color: #fff;
+    border-radius: 30px;
+    padding: 14px 32px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
 }
 
 a.button:hover {
-  background: var(--color-cta-hover);
+    background: var(--color-cta-hover);
 }
 
 .section {
-  padding: 80px 0;
+    padding: 40px 0;
 }
 
 main h2 {
-  font-size: 42px;
-  font-weight: 700;
-  margin-bottom: 40px;
-  color: var(--color-text-dark);
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: var(--color-text-dark);
 }
 
 main p {
-  line-height: 1.8;
+    line-height: 1.8;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
