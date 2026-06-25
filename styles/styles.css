@@ -1,7 +1,5 @@
 :root {
   --color-bg-primary: #FAF6F2;
-  --color-bg-gradient-start: #FDF4EC;
-  --color-bg-gradient-end: #E8EEF7;
   --color-accent-pink: #F4C7C3;
   --color-accent-blue: #B8D8E8;
   --color-accent-lavender: #D8CFF0;
@@ -13,14 +11,21 @@
 }
 
 body {
-  background: linear-gradient(160deg, var(--color-bg-gradient-start) 0%, var(--color-bg-gradient-end) 100%);
+  background: linear-gradient(160deg, #FDF4EC 0%, #E8EEF7 100%);
   color: var(--color-text-dark);
   font-family: 'Poppins', 'Inter', Arial, sans-serif;
 }
 
-h1, h2, h3 {
-  color: var(--color-text-dark);
-  font-weight: 700;
+main > div {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+h2 {
+  font-size: 34px;
+  text-align: center;
+  margin: 50px 0 28px;
 }
 
 a.button {
@@ -30,11 +35,10 @@ a.button {
   padding: 14px 32px;
   font-weight: 600;
   text-decoration: none;
-  transition: 0.3s;
   display: inline-block;
+  transition: 0.3s;
 }
 
 a.button:hover {
   background: var(--color-cta-hover);
-  transform: translateY(-2px);
 }
