@@ -300,27 +300,17 @@ main img {
 
 /* sections */
 main > .section {
-    margin: 0;
-    padding: 64px 0;
+    margin: 40px 0;
 }
 
-main > .section:nth-of-type(even) {
-    background: var(--color-bg-primary);
+main > .section > div {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 24px;
 }
 
-main h2 {
-    font-size: var(--heading-font-size-xl);
-    font-weight: 700;
-    text-align: center;
-    color: var(--color-text-dark);
-    margin-bottom: 12px;
-}
-
-main > .section > div > p:first-of-type {
-    text-align: center;
-    color: var(--color-text-muted);
-    max-width: 700px;
-    margin: 0 auto 40px;
+main > .section:first-of-type {
+    margin-top: 0;
 }
 
 @media (width >= 900px) {
