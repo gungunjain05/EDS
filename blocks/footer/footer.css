@@ -1,4 +1,4 @@
-footer .footer {
+.footer.footer-grid {
   background: #fff;
   border-top: 1px solid #EFE7E0;
   max-width: 1200px;
@@ -9,15 +9,13 @@ footer .footer {
   gap: 12px 28px;
 }
 
-/* har "row" (div) ko ek column ki tarah behave karwana */
-footer .footer > div {
+.footer.footer-grid > div {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-/* pehli row (Company, Quick Links, Services, Contact) headings hain */
-footer .footer > div:first-child > div {
+.footer.footer-grid > div:first-child > div {
   color: #E89B9B;
   font-weight: 700;
   font-size: 13px;
@@ -25,25 +23,15 @@ footer .footer > div:first-child > div {
   letter-spacing: 0.5px;
 }
 
-footer .footer > div:not(:first-child) > div {
+.footer.footer-grid > div:not(:first-child) > div {
   color: #6B6B7D;
   font-size: 14px;
 }
 
-footer .footer > div:not(:first-child) > div:empty {
+.footer.footer-grid > div:not(:first-child) > div:empty {
   display: none;
 }
 
-footer p {
-  text-align: center;
-  color: #A8A8B8;
-  font-size: 13px;
-  max-width: 1200px;
-  margin: 20px auto 24px;
-  padding-top: 20px;
-  border-top: 1px solid #EFE7E0;
-}
-
 @media (max-width: 768px) {
-  footer .footer { grid-template-columns: 1fr 1fr; }
+  .footer.footer-grid { grid-template-columns: 1fr 1fr; }
 }
