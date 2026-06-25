@@ -18,47 +18,47 @@
 .cards-card-body p { font-size: 14px; color: var(--color-text-muted); } */
 
 .cards ul {
-  list-style: none;
-  padding: 0;
-  margin: 40px 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
 }
 
 .cards li {
-  background: #fff;
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 8px 24px rgb(0 0 0 / 8%);
-  transition: transform .3s ease;
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 8%);
+    transition: transform 0.3s ease;
 }
 
 .cards li:hover {
-  transform: translateY(-6px);
+    transform: translateY(-6px);
 }
 
 .cards picture {
-  display: block;
+    display: block;
 }
 
 .cards picture img {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
+    width: 100%;
+    height: 210px;
+    object-fit: contain;
 }
 
 .cards-card-body,
 .cards li div:last-child {
-  padding: 20px;
+    padding: 20px;
 }
 
 .cards h3 {
-  margin-bottom: 10px;
-  font-size: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
 }
 
 .cards p {
-  color: var(--color-text-muted);
-  line-height: 1.6;
+    color: var(--color-text-muted);
+    line-height: 1.6;
 }
