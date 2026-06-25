@@ -1,4 +1,4 @@
-footer {
+/* footer {
   background-color: var(--color-accent-pink);
   font-size: var(--body-font-size-xs);
 }
@@ -17,4 +17,36 @@ footer .footer p {
   footer .footer > div {
     padding: 40px 32px 24px;
   }
+} */
+
+footer {
+  background: #fff;
+  margin-top: 80px;
+  border-top: 1px solid #ececec;
+}
+
+footer .footer {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 24px;
+}
+
+footer table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+footer td {
+  padding: 12px;
+  vertical-align: top;
+}
+
+footer tr:first-child td {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+footer p {
+  color: var(--color-text-muted);
 }
