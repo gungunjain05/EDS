@@ -87,8 +87,8 @@ header .nav-brand a {
 
 /* if logo is an image inside brand link */
 header .nav-brand img {
-    height: 70px;
-    width: 150px;
+    height: 54px;
+    width: 130px;
     display: block;
 }
 
