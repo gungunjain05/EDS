@@ -139,10 +139,18 @@ pre {
     overflow-x: auto;
     white-space: pre;
 }
+
 main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    max-width: none;
+}
+
+main > .section:not(.hero-container) > div {
     max-width: 1200px;
     margin: auto;
-    padding: 40px 24px 24px;
+    padding: 0 24px;
 }
 
 main > div {

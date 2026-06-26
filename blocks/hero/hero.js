@@ -37,5 +37,11 @@ export default function decorate(block) {
     content.append(cta);
   }
 
-  block.replaceChildren(bg, content);
+  block.classList.add('hero');
+
+  block.innerHTML = '';
+
+  block.append(bg);
+
+  block.append(content);
 }
