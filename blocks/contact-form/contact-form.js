@@ -1,3 +1,4 @@
+import { submitContactForm } from '../../scripts/api/contact-api.js';
 export default function decorate(block) {
     block.innerHTML = `
     <div class="contact-form-wrapper">
@@ -56,15 +57,22 @@ export default function decorate(block) {
     </div>
   `;
     const form = block.querySelector('.contact-form');
-
-    form.addEventListener('submit', (event) => {
+    form.addEventListener('submit', async (event) => {
         event.preventDefault();
 
         const formData = new FormData(form);
         const data = Object.fromEntries(formData.entries());
 
-        console.log(data);
-        form.reset();
+        try {
+            const result = await submitContactForm(data);
 
+            console.log(result);
+
+            alert('Form submitted successfully!');
+
+            form.reset();
+        } catch (error) {
+            alert('Something went wrong. Please try again.');
+        }
     });
 }
