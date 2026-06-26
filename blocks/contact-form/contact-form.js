@@ -1,5 +1,5 @@
 export default function decorate(block) {
-  block.innerHTML = `
+    block.innerHTML = `
     <div class="contact-form-wrapper">
       <h2>Contact Us</h2>
 
@@ -55,4 +55,11 @@ export default function decorate(block) {
       </form>
     </div>
   `;
+    const form = block.querySelector('.contact-form');
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        console.log('Form Submitted');
+    });
 }
