@@ -139,6 +139,7 @@ pre {
     overflow-x: auto;
     white-space: pre;
 }
+
 main {
     max-width: 1200px;
     margin: auto;
@@ -148,7 +149,11 @@ main {
 main > div {
     margin: 40px 16px;
 }
-
+main > div > .hero {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    max-width: none;
+}
 input,
 textarea,
 select,
