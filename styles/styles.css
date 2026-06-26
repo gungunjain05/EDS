@@ -294,13 +294,14 @@ main img {
 
 main > div {
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     padding: 40px 24px;
 }
 
-.hero {
+main > div > .hero {
     width: 100vw;
     margin-left: calc(50% - 50vw);
+    max-width: none;
 }
 main > .section:first-of-type {
     margin-top: 0;
@@ -318,21 +319,4 @@ main .section.highlight {
     background-color: var(--light-color);
     margin: 0;
     padding: 40px 0;
-}
-
-main > .hero-container > div {
-    max-width: 100% !important;
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-.hero-container {
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-.hero-container .hero {
-    width: 100%;
-    min-height: 90vh;
 }
