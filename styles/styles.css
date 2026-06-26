@@ -139,8 +139,7 @@ pre {
     overflow-x: auto;
     white-space: pre;
 }
-
-main {
+/* main {
     max-width: 1200px;
     margin: auto;
     padding: 40px 24px 24px;
@@ -148,12 +147,20 @@ main {
 
 main > div {
     margin: 40px 16px;
+} */
+
+main > div {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 24px;
 }
+
 main > div > .hero {
     width: 100vw;
     margin-left: calc(50% - 50vw);
     max-width: none;
 }
+
 input,
 textarea,
 select,
@@ -303,12 +310,12 @@ main img {
 }
 
 /* sections */
-
+/* 
 main > .section > div {
     max-width: 1200px;
     margin: auto;
     padding: 0 24px;
-}
+} */
 
 main > .section:first-of-type {
     margin-top: 0;
