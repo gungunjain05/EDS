@@ -64,5 +64,7 @@ export default function decorate(block) {
         const data = Object.fromEntries(formData.entries());
 
         console.log(data);
+        form.reset();
+
     });
 }
