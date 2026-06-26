@@ -112,7 +112,6 @@ header .nav-hamburger {
 
     header .nav-hamburger {
         display: block;
-        margin-left: auto;
     }
     .nav-hamburger button {
         background: none;
