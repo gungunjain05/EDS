@@ -140,19 +140,6 @@ pre {
     white-space: pre;
 }
 
-main {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    max-width: none;
-}
-
-main > .section:not(.hero-container) > div {
-    max-width: 1200px;
-    margin: auto;
-    padding: 40px 24px 24px;
-}
-
 main > div {
     margin: 40px 16px;
 }
@@ -331,54 +318,19 @@ main .section.highlight {
     padding: 40px 0;
 }
 
-/* :root {
-
+main > .hero-container > div {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
-
-main > div {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 24px;
+.hero-container {
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
-h2 {
-  font-size: 34px;
-  text-align: center;
-  margin: 50px 0 28px;
+.hero-container .hero {
+    width: 100%;
+    min-height: 90vh;
 }
-
-a.button {
-  background: var(--color-cta);
-  color: #fff;
-  border-radius: 30px;
-  padding: 14px 32px;
-  font-weight: 600;
-  text-decoration: none;
-  display: inline-block;
-  transition: 0.3s;
-}
-
-a.button:hover {
-  background: var(--color-cta-hover);
-}
-
-.section {
-  padding: 0px 0;
-}
-
-main h2 {
-  font-size: 42px;
-  font-weight: 700;
-  margin-bottom: 40px;
-  color: var(--color-text-dark);
-}
-
-main p {
-  line-height: 1.8;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-} */
