@@ -139,6 +139,11 @@ pre {
     overflow-x: auto;
     white-space: pre;
 }
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 24px 24px;
+}
 
 main > div {
     margin: 40px 16px;
@@ -292,17 +297,14 @@ main img {
     width: 100%;
 }
 
-main > div {
+/* sections */
+
+main > .section > div {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 40px 24px;
+    margin: auto;
+    padding: 0 24px;
 }
 
-main > div > .hero {
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    max-width: none;
-}
 main > .section:first-of-type {
     margin-top: 0;
 }
