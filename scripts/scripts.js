@@ -142,10 +142,10 @@ function addOrganizationSchema() {
   const schema = {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Gungun AEM EDS',
-    url: window.location.origin,
-    logo: `${window.location.origin}/default-meta-image.png`,
-    description: 'High-performance websites built using Adobe AEM Edge Delivery Services.',
+    name: document.title,
+    url: window.location.href,
+    description: getMetadata('description') || '',
+    logo: getMetadata('og:image') || '',
   };
 
   const script = document.createElement('script');
