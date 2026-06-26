@@ -292,21 +292,15 @@ main img {
     width: 100%;
 }
 
-/* sections */
-
-/* Normal sections */
-main > .section:not(.hero-container) > div {
+main > div {
     max-width: 1200px;
     margin: auto;
     padding: 40px 24px;
 }
 
-/* Hero only */
-main > .hero-container > div {
-    max-width: none;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+.hero {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
 }
 main > .section:first-of-type {
     margin-top: 0;
