@@ -55,4 +55,14 @@ export default function decorate(block) {
       </form>
     </div>
   `;
+    const form = block.querySelector('.contact-form');
+
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+
+        console.log(data);
+    });
 }
