@@ -150,7 +150,7 @@ main {
 main > .section:not(.hero-container) > div {
     max-width: 1200px;
     margin: auto;
-    padding: 0 24px;
+    padding: 40px 24px 24px;
 }
 
 main > div {
