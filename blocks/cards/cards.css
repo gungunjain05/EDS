@@ -99,6 +99,7 @@
 
 .cards p {
     margin: 0;
+    padding: 14px;
     line-height: 1.7;
     color: var(--color-text-muted);
 }
