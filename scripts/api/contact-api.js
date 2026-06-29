@@ -1,8 +1,8 @@
 export async function submitContactForm(data) {
     try {
-        console.log('Sending data to API...');
+        console.log('Sending data to Google Sheet...');
 
-        const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
+        const response = await fetch('https://script.google.com/macros/s/AKfycbwPmaSR9N7_H5BM03Or2W3VUO3-qO_Sypl-phzUBB7O1EQd7xVxwiHGEUZ35xWiWYjAhw/exec', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -15,7 +15,6 @@ export async function submitContactForm(data) {
         }
 
         const result = await response.json();
-
         console.log('API Response:', result);
 
         return result;
